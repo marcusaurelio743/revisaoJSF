@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
-@ViewScoped
+import javax.faces.bean.SessionScoped;
+@SessionScoped
 @ManagedBean(name = "pessoaBean")
 
 public class PessoaBean {
