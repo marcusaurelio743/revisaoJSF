@@ -11,16 +11,17 @@
   		<h:outputLabel value="Nome:"/>
   		<h:inputText id="campoNome" value="#{pessoaBean.nome}"/><br/>
   		
-  		<h:outputLabel value="Sobrenome:"/>
-  		<h:inputText id="campoSobrenome" value="#{pessoaBean.sobrenome}"/>
-  		<br/>
-  		
-  		<h:outputLabel value="NomeCompleto"/><br/>
-  		<h:outputText value="#{pessoaBean.nomeCompleto}"/>
   		<br/>
   		
   		
-  		<h:commandButton value="MostrarNome" action="#{pessoaBean.MostrarNome}"/>
+  		<h:commandButton value="Adicionar Nome" title="adicionar nome" action="#{pessoaBean.AddNome}"/>
+  		
+  		<h:dataTable value="#{pessoaBean.nomes}" var="nome">
+  			<h:column>
+  				<h:outputText value="#{nome}" title="nome"/>
+  			</h:column>
+  		
+  		</h:dataTable>
   	</h:form>
   
   </h:body>
